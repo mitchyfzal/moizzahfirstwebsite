@@ -1,0 +1,19 @@
+.blueColor{
+    background-color: aqua;
+
+}
+.textWhite{ color: rgb(190, 190, 131);
+
+}
+.minifywidth{
+    border: 1px solid red;
+    width: 50%;
+
+}
+.multipleStyles{
+border: 5px dashed skyblue
+border-radius 5%;
+width: 70%;
+height: 500px;
+
+}

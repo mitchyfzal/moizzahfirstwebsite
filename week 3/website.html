@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clayquest by Mitchy</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9e9e9; /* Soft pink background */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            color: #ff6f61; /* Bright red */
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .header p {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px 0;
+            background-color: #ff6f61; /* Bright red */
+            color: #fff;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Clayquest by Mitchy</h1>
+            <p>Discover our captivating collection of handmade clay jewelry.</p>
+        </div>
+        
+        <div class="gallery">
+            <img src="https://pernazjewel.com/cdn/shop/products/image_74f5a314-b8d7-445c-9420-9c5af3f54003.jpg?v=1673796299&width=1100" alt="SCENERY EARRINGS">
+            <img src="https://pernazjewel.com/cdn/shop/files/FFC41483-3E6A-4DA4-A6D1-02A7F3CB0E05.jpg?v=1705096631&width=1100" alt="FLOWER EARIINGS">
+            <img src="https://pernazjewel.com/cdn/shop/products/blackheart.jpg?v=1669918092&width=1100" alt="HEART SHAPED EARRINGS">
+            <!-- Add more images here -->
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Clayquest by Mitchy. All rights reserved.</p>
+    </div>
+</body>
+</html>
