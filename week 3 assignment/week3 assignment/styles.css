@@ -23,26 +23,45 @@ nav a {
     color: #bd2626;
     text-decoration: none;
     margin: 0 10px;
-    font-size: 18px;
+    font-size: 30px;
+   
 }
 
 nav a:hover {
     color: navy;
+  
 }
 
 
 .container {
     text-align: center;
-    margin-top: 50px;
-    font-size: 24px;
+    margin-top: 150px;
+    font-size: 40px;
+    color: rgb(127, 165, 255);
+    text-shadow: black;
+    background-color: #766b5a;
+    
 }
 
+
+
+
+.container :hover{
+background-color: #ff9c07;
+color: #cfed83;
+
+
+}
+
+
+
+
 .container h1, .container p {
-    margin: 10px 0;
+    margin: 30px 0;
 }
 
 .container p {
-    color: #0e0000;
+    color: #292525;
 }
 
 .container p.sale {
