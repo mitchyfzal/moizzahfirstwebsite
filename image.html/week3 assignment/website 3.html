@@ -5,66 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clayquest Jewelry</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-       
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        nav {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 20px;
-        }
-        nav a:hover {
-            background-color: #555;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <link href="website 3.css" rel="stylesheet">
+
 </head>
+
 <body>
     
     <nav>
-        <a href="#">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="website 2.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT US</a>
     </nav>
     
-    <div class="container mx-auto my-8">
-        <h1 class="text-3xl font-bold text-center">Welcome to Clayquest Jewelry</h1>
-        <p class="text-lg text-center mt-4">Discover unique and stylish polymer clay jewelry.</p>
+    <div class="container mx-auto my-10">
+        <h1 class="text-5xl font-bold text-center heading">Welcome to Clayquest Jewelry</h1>
+        <p class="text-2xl font-bold text-center mt-5">Discover unique and stylish polymer clay jewelry.</p>
+    </div>
+    
+
+
+
+
+    <div class="grid grid-cols-4 md:grid-cols-4 gap-3">
+        <div>
+            <img class="max-w-10 rounded-1g hover-white" src="https://magiclampwork.com/wp-content/uploads/2023/11/IMG_2684-1004x1024.jpg" alt="Image">
+        </div>
+        <div>
+            <img class="max-w-10 rounded-1g hover-white" src="https://www.charmainestudios.com/cdn/shop/products/20221221_160156_mh1671618775948.jpg" alt="">
+        </div>
+        <div>
+            <img class="max-w-full rounded-1g hover-white" src="https://i.etsystatic.com/29505194/r/il/5d39a7/3114404648/il_1588xN.3114404648_htt2.jpg" alt="">
+        </div>
+        <div>
+            <img class="max-w-full rounded-1g hover-white" src="https://i.etsystatic.com/45176767/r/il/2ad7c6/5149055711/il_1588xN.5149055711_6fri.jpg" alt="">
+        </div>
+        <div>
+            <img class="max-w-full rounded-lg hover-white" src="https://i.etsystatic.com/45176767/r/il/ccd65e/5147154987/il_1588xN.5147154987_puc4.jpg" alt="">
+        </div>
+        <div>
+            <img class="max-w-full rounded-lg hover-white" src="https://i.etsystatic.com/8440299/r/il/ea4451/4906557538/il_1588xN.4906557538_rpzj.jpg" alt="">
+        </div>
+        <div>
+            <img class="max-w-full rounded-lg hover-white" src="https://i.etsystatic.com/32114616/r/il/3d2899/3742134621/il_1588xN.3742134621_c9ti.jpg" alt="">
+        </div>
+        <div>
+            <img class="max-w-full rounded-lg hover-white" src="https://i.etsystatic.com/47913397/r/il/f7046c/5781017257/il_1588xN.5781017257_kq48.jpg" alt="">
+        </div>
+        <div>
+            <img class="max-w-full rounded-lg hover-white" src="https://i.etsystatic.com/46144529/r/il/2f1f17/5549629782/il_1588xN.5549629782_gk22.jpg" alt="">
+        </div>
+        <div>
+            <img class="max-w-full rounded-lg hover-white" src="https://i.etsystatic.com/47913397/r/il/3694eb/5815638421/il_1588xN.5815638421_ort6.jpg" alt="">
+        </div>
+        <div>
+            <img class="max-w-full rounded-lg hover-white" src="https://i.etsystatic.com/49098936/r/il/4d111b/5831202772/il_1588xN.5831202772_lkku.jpg" alt="">
+        </div>
+        <div>
+            <img class="max-w-full rounded-lg hover-white" src="https://i.etsystatic.com/11352858/r/il/73a1df/3175309536/il_570xN.3175309536_kceg.jpg" alt="">
+        </div>
     </div>
 
-        <nav>
-            <title>About Clayquest Jewelry</title>
-            <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-        </nav>
+    <div x-data="{ slide: 0 }" class="relative">
+        <div class="overflow-hidden">
+          <div class="flex transition-transform duration-300" :style="'transform: translateX(-' + slide + ' * 100%)'">
+            <div class="max-w-10 flex-shrink-0">
+              <!-- Slide 1 content -->
+              <img src="/assets/clay (3).jpeg" alt="Slide 1" class="w-full">
+            </div>
+            <div class="max-w-10 flex-shrink-0">
+              <!-- Slide 2 content -->
+              <img src="/assets/clay (2).jpeg" alt="Slide 2" class="w-full">
+            </div>
+            <!-- Add more slides as needed -->
+          </div>
+        </div>
+        <button @click="slide = Math.max(slide - 1, 0)" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-1 rounded-full focus:outline-none hover:opacity-75">Previous</button>
+        <button @click="slide = Math.min(slide + 1, 2)" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white px-3 py-1 rounded-full focus:outline-none hover:opacity-75">Next</button>
+      </div>
+      
+
+    <nav>
+        <title > ABOUT CLAYQUEST BY MITCHY</title>
+    </nav>
+
+  
         
         <div class="container mx-auto my-8">
             <div class="flex">
                 <div class="w-1/2">
-                    <h2 class="text-2xl font-bold">Clayquest by Mitchy</h2>
+                    <h2 class="text-2x2 font-bold">Clayquest by Mitchy</h2>
                     <p class="mt-4">Clayquest by Mitchy was started by Moizzah Afzal in 2020 amid Covid. Due to an increasing rise in online businesses, this jewelry brand rose to fame in less than a year.</p>
                 </div>
                 <div class="w-1/2">
-                    <h2 class="text-2xl font-bold">About Clayquest</h2>
-                    <p class="mt-4">Clayquest is a quest to finding and making the best quality polymer clay jewelry for the consumer. Our consumers love the uncrackable jewelry that offers them a unique and stylish look. Apart from that, we also create beautiful handmade rings and necklaces embellished with fine quality pearls and beads.</p>
+                    <h2 class="text-2x2 font-bold">About Clayquest</h2>
+                    <p class="mt-4">Clayquest is a 'VOYAGE' to finding and making the best quality polymer clay jewelry for the consumer. Our consumers love the uncrackable jewelry that offers them a unique and stylish look. Apart from that, we also create beautiful handmade rings and necklaces embellished with fine quality pearls and beads.</p>
                 </div>
             </div>
         </div>
@@ -72,6 +106,24 @@
     
      <footer>
         <p>&copy; 2024 Clayquest Jewelry. All rights reserved.</p>
+
+        
+            <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+                <div class="md:flex md:justify-between">
+                  <div class="mb-6 md:mb-0">
+                      <a href="website 2.html" class="flex items-center">
+                          <img src="E:\webDevelopment\assets\Q.png" class="h-4 me-11" alt="ClayQuest logo" />
+                          <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">ClayQuest</span>
+                      </a>
+                  </div>
+                  <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                      <div>
+                          <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
+                          <ul class="text-gray-500 dark:text-gray-400 font-medium">
+
+
+
+
     </footer>
 </body>
 </html>

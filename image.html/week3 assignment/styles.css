@@ -1,0 +1,53 @@
+.body, h1, p {
+    margin: 0;
+    padding: 0;
+    ;
+}
+
+body {
+    background-image: url(/assets/FINAL\ black.jpg); 
+    background-size: cover;
+    background-position: left; 
+    background-repeat: no-repeat; 
+}
+
+
+nav {
+    background-color: #f5e20f;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #bd2626;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: navy;
+}
+
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 24px;
+}
+
+.container h1, .container p {
+    margin: 10px 0;
+}
+
+.container p {
+    color: #0e0000;
+}
+
+.container p.sale {
+    color: rgb(250, 249, 249);
+   
+
+    
+}
